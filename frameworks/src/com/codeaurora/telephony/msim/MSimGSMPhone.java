@@ -85,7 +85,6 @@ public class MSimGSMPhone extends GSMPhone {
                 this, EVENT_SUBSCRIPTION_ACTIVATED, null);
         subMgr.registerForSubscriptionDeactivated(mSubscription,
                 this, EVENT_SUBSCRIPTION_DEACTIVATED, null);
-        mSubscriptionData = subMgr.getCurrentSubscription(mSubscription);
 
         setProperties();
     }
